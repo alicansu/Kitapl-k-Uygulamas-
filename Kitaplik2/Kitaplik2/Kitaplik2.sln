@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kitaplik2.Entities", "Kitaplik2.Entities\Kitaplik2.Entities.csproj", "{55C9AFCC-7747-4C59-ABBD-42D6720DA706}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kitaplik2.DAL", "Kitaplik2.DAL\Kitaplik2.DAL.csproj", "{79DEF4CC-B0AC-4D15-86AE-424968F34CE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kitaplik2.FormUI", "Kitaplik2.FormUI\Kitaplik2.FormUI.csproj", "{B7B85E14-03AF-44CB-A563-7C102AA118B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kitaplik2.Business", "Kitaplik2.Business\Kitaplik2.Business.csproj", "{FA9355A2-0E27-44E6-9DB7-0C6A13EBEE7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kitaplık2Console", "Kitaplık2Console\Kitaplık2Console.csproj", "{98FC9A04-853E-4B54-A195-ACC03C91448F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kitaplik2.WebUI", "Kitaplik2.WebUI\Kitaplik2.WebUI.csproj", "{F2A849D2-1241-4EC8-888A-B9CF0AB823A9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55C9AFCC-7747-4C59-ABBD-42D6720DA706}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55C9AFCC-7747-4C59-ABBD-42D6720DA706}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55C9AFCC-7747-4C59-ABBD-42D6720DA706}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55C9AFCC-7747-4C59-ABBD-42D6720DA706}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79DEF4CC-B0AC-4D15-86AE-424968F34CE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79DEF4CC-B0AC-4D15-86AE-424968F34CE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79DEF4CC-B0AC-4D15-86AE-424968F34CE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79DEF4CC-B0AC-4D15-86AE-424968F34CE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7B85E14-03AF-44CB-A563-7C102AA118B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7B85E14-03AF-44CB-A563-7C102AA118B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7B85E14-03AF-44CB-A563-7C102AA118B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7B85E14-03AF-44CB-A563-7C102AA118B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA9355A2-0E27-44E6-9DB7-0C6A13EBEE7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA9355A2-0E27-44E6-9DB7-0C6A13EBEE7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA9355A2-0E27-44E6-9DB7-0C6A13EBEE7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA9355A2-0E27-44E6-9DB7-0C6A13EBEE7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98FC9A04-853E-4B54-A195-ACC03C91448F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98FC9A04-853E-4B54-A195-ACC03C91448F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98FC9A04-853E-4B54-A195-ACC03C91448F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98FC9A04-853E-4B54-A195-ACC03C91448F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2A849D2-1241-4EC8-888A-B9CF0AB823A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2A849D2-1241-4EC8-888A-B9CF0AB823A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2A849D2-1241-4EC8-888A-B9CF0AB823A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2A849D2-1241-4EC8-888A-B9CF0AB823A9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F8A219B8-0110-4FDA-A231-502AB6938F75}
+	EndGlobalSection
+EndGlobal
