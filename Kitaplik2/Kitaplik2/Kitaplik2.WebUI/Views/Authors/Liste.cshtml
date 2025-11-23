@@ -1,4 +1,5 @@
-﻿
+﻿@using Kitaplik2.Entities.Concrete
+@model List<Author>
 
 
 <table class="table">
@@ -9,11 +10,8 @@
             <th scope="col"></th>
             <th scope="col"></th>
         </tr>
-
     </thead>
-
     <tbody>
-
         @foreach (var item in Model)
         {
             <tr>
@@ -21,14 +19,9 @@
                 <td>@item.Name</td>
                 <td><a href="/Authors/Sil/@item.Id" class="btn btn-danger">Sil</a></td>
                 <td><a href="/Authors/Guncelle/@item.Id" class="btn btn-success">Güncelle</a></td>
-
             </tr>
         }
-
-
-
     </tbody>
 </table>
 
-
-<a href="/Category/Ekle" class="btn btn-primary">Kategori ekle</a>
+<a href="/Authors/Ekle" class="btn btn-primary">Yazar ekle</a>

@@ -1,18 +1,16 @@
-﻿
+﻿@using Kitaplik2.Entities.Concrete
+@model List<Book>
 
 <table class="table">
     <thead>
         <tr>
             <th scope="col">#</th>
-            <th scope="col">kitap Adı</th>
+            <th scope="col">Kitap Adı</th>
             <th scope="col"></th>
             <th scope="col"></th>
         </tr>
-
     </thead>
-
     <tbody>
-
         @foreach (var item in Model)
         {
             <tr>
@@ -25,4 +23,4 @@
     </tbody>
 </table>
 
-<a href="/Book/Ekle" class="btn btn-primary">Kategori ekle</a>
+<a href="/Book/Ekle" class="btn btn-primary">Kitap ekle</a>
