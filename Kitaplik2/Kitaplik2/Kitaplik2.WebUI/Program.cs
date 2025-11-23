@@ -10,18 +10,15 @@ namespace Kitaplik2.WebUI
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // --- EKLENEN KISIM BAÞLANGIÇ ---
-            // Projen bir MVC projesi olduðu için bu servisi MUTLAKA eklemelisin.
-            // Aksi takdirde Controller'lar ve View'lar (Layout dahil) düzgün çalýþmaz.
+            // --- EKSÝK OLAN KISIM BURASI ---
+            // MVC Projesi olduðu için bunu eklemek ZORUNDASIN.
             builder.Services.AddControllersWithViews();
-            // --- EKLENEN KISIM BÝTÝÞ ---
+            // -------------------------------
 
-            // Razor Pages servisi (Eðer Razor Pages kullanmýyorsan bunu silebilirsin ama durmasýnýn zararý yok)
             builder.Services.AddRazorPages();
 
             var app = builder.Build();
 
-            // Hata yönetimi ortam ayarlarý
             if (!app.Environment.IsDevelopment())
             {
                 app.UseExceptionHandler("/Error");
@@ -34,7 +31,6 @@ namespace Kitaplik2.WebUI
             app.UseRouting();
             app.UseAuthorization();
 
-            // Rotalarý tanýmlýyoruz
             app.MapRazorPages();
 
             app.MapControllerRoute(
