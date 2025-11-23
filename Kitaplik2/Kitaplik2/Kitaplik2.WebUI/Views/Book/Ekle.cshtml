@@ -1,0 +1,11 @@
+﻿@model Kitaplik2.Entities.Concrete.Book
+
+<form asp-action="Ekle" asp-controller="Book">
+
+    <label for="">Kategori Adı Yazınız</label>
+    <input type="text" class="form-control" asp-for="Name">
+    <br />
+
+    <button type="submit" class="btn btn-primary">Ekle</button>
+
+</form>

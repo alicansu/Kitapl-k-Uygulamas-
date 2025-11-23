@@ -4,13 +4,13 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Kitaplik2.WebUI.Controllers
 {
-    public class CategoryController : Controller
+    public class PublisherController : Controller
     {
-        CategoryManager _categoryManager = new();
+        PublisherManager _publisherManager = new();
         public IActionResult Liste()
         {
-            List<Category> categories = _categoryManager.GetAll();
-            return View(categories);
+            List<Publisher> publishers = _publisherManager.GetAll();
+            return View(publishers);
         }
 
         [HttpGet]
@@ -20,30 +20,30 @@ namespace Kitaplik2.WebUI.Controllers
         }
 
         [HttpPost]
-        public IActionResult Ekle(Category category)
+        public IActionResult Ekle(Publisher publisher)
         {
-            _categoryManager.Add(category);
+            _publisherManager.Add(publisher);
             return RedirectToAction("Liste");
         }
 
         public IActionResult Guncelle(int id)
         {
-            Category category = _categoryManager.GetById(id);
+            Publisher category = _publisherManager.GetById(id);
             return View(category);
         }
 
         [HttpPost]
-        public IActionResult Guncelle(Category category)
+        public IActionResult Guncelle(Publisher publisher)
         {
-            _categoryManager.Update(category);
+            _publisherManager.Update(publisher);
             return RedirectToAction("Liste");
         }
 
         public IActionResult Sil(int id)
         {
-            Category c = _categoryManager.GetById(id);
+            Publisher p = _publisherManager.GetById(id);
 
-            _categoryManager.Delete(c);
+            _publisherManager.Delete(p);
 
             return RedirectToAction("Liste");
         }

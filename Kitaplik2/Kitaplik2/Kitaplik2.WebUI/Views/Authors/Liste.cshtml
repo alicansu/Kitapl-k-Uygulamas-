@@ -1,0 +1,34 @@
+﻿
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Yazar Adı</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+        </tr>
+
+    </thead>
+
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th scope="row">@item.Id</th>
+                <td>@item.Name</td>
+                <td><a href="/Authors/Sil/@item.Id" class="btn btn-danger">Sil</a></td>
+                <td><a href="/Authors/Guncelle/@item.Id" class="btn btn-success">Güncelle</a></td>
+
+            </tr>
+        }
+
+
+
+    </tbody>
+</table>
+
+
+<a href="/Category/Ekle" class="btn btn-primary">Kategori ekle</a>
