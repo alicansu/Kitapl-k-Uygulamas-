@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Kitaplik2.WebUI.Controllers
 {
-    public class PublisherController : Controller
+    public class PublishersController : Controller
     {
         PublisherManager _publisherManager = new();
         public IActionResult Liste()

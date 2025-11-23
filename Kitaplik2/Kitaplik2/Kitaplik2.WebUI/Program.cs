@@ -35,7 +35,7 @@ namespace Kitaplik2.WebUI
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{controller=Book}/{action=Liste}/{id?}");
 
             app.Run();
         }

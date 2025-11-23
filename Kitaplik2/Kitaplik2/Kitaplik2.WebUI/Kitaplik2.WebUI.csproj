@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Kitaplik2.Business\Kitaplik2.Business.csproj" />
+    <ProjectReference Include="..\Kitaplik2.Entities\Kitaplik2.Entities.csproj" />
   </ItemGroup>
 
 </Project>
